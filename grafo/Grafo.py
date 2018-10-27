@@ -2,8 +2,8 @@
 # Estrutura de Dados 2
 # Jonathan Arantes
 
-from .Vertice import Vertice
-from .Aresta import Aresta
+from Vertice import Vertice
+from Aresta import Aresta
 
 class Grafo(object):
 
