@@ -38,7 +38,7 @@ class Vertice():
         return self.estimativa < v.estimativa
 
     def __eq__(self, v):
-        return self.id == v.id
+        return self.getId() == v.getId()
 
     def __gt__(self, v):
         return self.estimativa > v.estimativa

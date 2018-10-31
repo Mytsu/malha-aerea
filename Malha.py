@@ -32,19 +32,19 @@ class Malha:
 
     # questao 3
     def menorCaminho(self, v1, v2):
-        # print('Menor caminho em termos de tempo de voo:')
-        # lista = self.voos.Dijkstra(v1, v2)
-        # s = ''
-        # for v in lista:
-        #    s += str(v.getId()) + ' -> '
-        # print s
-        # print('Menor caminho em termos de distancia percorrida:')
-        # lista = self.rotas.Dijkstra(v1, v2)
-        # s = ''
-        # for v in lista:
-        #    s += str(v.getId()) + ' -> '
-        # print s
-        pass
+        print('Menor caminho em termos de tempo de voo:')
+        lista = self.voos.buscaLargura(v1, v2)
+        s = ''
+        for v in lista:
+           s += str(v.getId()) + ' -> '
+        print(s)
+        print('Menor caminho em termos de distancia percorrida:')
+        lista = self.rotas.buscaLargura(v1, v2)
+        s = ''
+        for v in lista:
+           s += str(v.getId()) + ' -> '
+        print(s)
+        return lista
 
     # questao 5
     def problemaCaixeiro(self, inicio):
